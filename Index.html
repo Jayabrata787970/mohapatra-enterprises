@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohapatra Enterprises</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      line-height:1.6;
+    }
+    header {
+      background:#161b22;
+      padding:1rem 2rem;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      box-shadow:0 2px 10px rgba(0,0,0,0.5);
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+    header h1 {
+      font-size:1.8rem;
+      color:#58a6ff;
+      letter-spacing:1px;
+    }
+    nav a {
+      color:#c9d1d9;
+      text-decoration:none;
+      margin-left:1rem;
+      font-weight:500;
+      transition:0.3s;
+    }
+    nav a:hover {
+      color:#58a6ff;
+    }
+    section {
+      padding:3rem 2rem;
+      max-width:1000px;
+      margin:auto;
+    }
+    h2 {
+      text-align:center;
+      color:#58a6ff;
+      margin-bottom:1.5rem;
+      font-size:2rem;
+    }
+    .about, .services, .departments, .team, .contact {
+      background:#161b22;
+      border-radius:10px;
+      padding:2rem;
+      box-shadow:0 0 10px rgba(255,255,255,0.1);
+      margin-bottom:2rem;
+    }
+    .services ul, .departments ul {
+      list-style:none;
+      padding-left:0;
+    }
+    .services li, .departments li {
+      background:#0d1117;
+      margin:0.5rem 0;
+      padding:0.7rem 1rem;
+      border-radius:5px;
+      transition:0.3s;
+    }
+    .services li:hover, .departments li:hover {
+      background:#21262d;
+    }
+    .team-member {
+      text-align:center;
+      padding:1rem;
+    }
+    .team-member h3 {
+      color:#58a6ff;
+      font-size:1.2rem;
+    }
+    footer {
+      background:#161b22;
+      text-align:center;
+      padding:1rem;
+      font-size:0.9rem;
+      color:#8b949e;
+      border-top:1px solid #30363d;
+    }
+    @media (max-width:768px){
+      header {flex-direction:column;}
+      nav {margin-top:1rem;}
+      section {padding:2rem 1rem;}
+    }
+
+    /* AI Assistant Widget */
+    .ai-widget {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#21262d;
+      border:1px solid #30363d;
+      border-radius:10px;
+      width:300px;
+      max-height:400px;
+      box-shadow:0 0 15px rgba(0,0,0,0.6);
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+      z-index:9999;
+    }
+    .ai-header {
+      background:#161b22;
+      padding:0.8rem;
+      color:#58a6ff;
+      font-weight:600;
+      text-align:center;
+      border-bottom:1px solid #30363d;
+    }
+    .ai-body {
+      flex:1;
+      padding:1rem;
+      font-size:0.9rem;
+      overflow-y:auto;
+      color:#c9d1d9;
+    }
+    .ai-input {
+      display:flex;
+      border-top:1px solid #30363d;
+    }
+    .ai-input input {
+      flex:1;
+      padding:0.5rem;
+      border:none;
+      background:#0d1117;
+      color:#e6edf3;
+    }
+    .ai-input button {
+      background:#58a6ff;
+      color:#0d1117;
+      border:none;
+      padding:0.5rem 1rem;
+      cursor:pointer;
+      font-weight:600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mohapatra Enterprises</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#departments">Departments</a>
+      <a href="#team">Our Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to Mohapatra Enterprises</h2>
+    <p style="text-align:center;">Empowering innovation and excellence — A test website before production.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Mohapatra Enterprises is committed to providing quality products and services. This page serves as a test before our production website goes live. We believe in professionalism, innovation, and customer satisfaction.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Business Consulting</li>
+      <li>IT Solutions</li>
+      <li>Marketing & Branding</li>
+      <li>Customer Support</li>
+    </ul>
+  </section>
+
+  <section id="departments" class="departments">
+    <h2>Our Departments</h2>
+    <ul>
+      <li>Sales & Marketing</li>
+      <li>Human Resources</li>
+      <li>Finance & Accounts</li>
+      <li>Technical Support</li>
+    </ul>
+  </section>
+
+  <section id="team" class="team">
+    <h2>Our Team</h2>
+    <div class="team-member">
+      <h3>Chandan Kumar Panda</h3>
+      <p>Chief Executive Officer (CEO)</p>
+    </div>
+    <div class="team-member">
+      <h3>IT Support</h3>
+      <p>(Details hidden for privacy)</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 XYZ</p>
+    <p>📧 XYZ</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mohapatra Enterprises. All Rights Reserved.</p>
+  </footer>
+
+  <!-- AI Assistant Widget -->
+  <div class="ai-widget">
+    <div class="ai-header">AI Assistant</div>
+    <div class="ai-body">
+      <p>Hello! I'm your virtual assistant. How can I help you today?</p>
+    </div>
+    <div class="ai-input">
+      <input type="text" placeholder="Type your question..." />
+      <button>Send</button>
+    </div>
+  </div>
+
+</body>
+</html>
